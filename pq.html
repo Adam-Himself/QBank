@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./local_library_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.png">
+    <title>Past Questions</title>
+    <link rel="stylesheet" href="pq.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-firstpart">
+          <div class="homepage-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#ffffff"
+            >
+              <path
+                d="M480-60q-72-68-165-104t-195-36v-440q101 0 194 36.5T480-498q73-69 166-105.5T840-640v440q-103 0-195.5 36T480-60Zm0-104q63-47 134-75t146-37v-276q-73 13-143.5 52.5T480-394q-66-66-136.5-105.5T200-552v276q75 9 146 37t134 75ZM367-647q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47Zm169.5-56.5Q560-727 560-760t-23.5-56.5Q513-840 480-840t-56.5 23.5Q400-793 400-760t23.5 56.5Q447-680 480-680t56.5-23.5ZM480-760Zm0 366Z"
+              />
+            </svg>
+          </div>
+          <h2>QBank</h2>
+        </div>
+        <div class="nav-secondpart">
+          <a href="index.html" class="link">Home</a>
+          <a href="about.html" class="link">About</a>
+          <a href="pq.html" class="link">Past Questions</a>
+          <a href="colleges.html" class="link">Colleges</a>
+        </div>
+        <a href="login.html" id="login-button">Login</a>
+        <div class="dropdown-open-btn" id="open-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#4B4739"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </div>
+        <div class="dropdown-close-btn" id="close-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#4B4739"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <div id="header-dropdown" class="header-dropdown">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pq.html">Past Questions</a>
+      <a href="colleges.html">Colleges</a>
+      <a href="login.html" id="dropdown-login-button">Login</a>
+    </div>
+    <main>
+      <section class="pq-page-first-section">
+        <div class="pq-page-first-section-div">
+          <p>Qbank library</p>
+          <h1>Past Questions</h1>
+          <p id="second-paragraph">
+            Find examination questions by course, level, college, or academic
+            session.
+          </p>
+        </div>
+      </section>
+      <section id="pq-page-second-section" class="pq-page-second-section">
+        <div class="pq-page-second-section-top">
+          <form id="filter-form">
+            <label id="filter-form-search-label" for="search"
+              >Search the library</label
+            >
+            <input
+              type="text"
+              id="courseSearch"
+              placeholder="Course code, title or keyword"
+            />
+            <div class="dropdowns">
+              <div class="dropdown">
+                <label for="level">Level</label>
+                <select id="level-dropdown">
+                  <option value="">All Levels</option>
+                  <option value="100 Level">100 Level</option>
+                  <option value="200 Level">200 Level</option>
+                  <option value="300 Level">300 Level</option>
+                  <option value="400 Level">400 Level</option>
+                  <option value="500 Level">500 Level</option>
+                </select>
+              </div>
+              <div class="dropdown">
+                <label for="college">College</label>
+                <select id="college-dropdown">
+                  <option value="">All Colleges</option>
+                  <option value="COE">COE</option>
+                  <option value="CST">CST</option>
+                  <option value="COL">COL</option>
+                  <option value="CMSS">CMSS</option>
+                </select>
+              </div>
+              <div class="dropdown">
+                <label for="sessions">Sessions</label>
+                <select id="session-dropdown">
+                  <option value="">All Sessions</option>
+                  <option value="2025/2026">2025/2026</option>
+                  <option value="2024/2025">2024/2025</option>
+                  <option value="2023/2024">2023/2024</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="pq-page-second-section-bottom">
+          <div class="pq-page-second-section-bottom-first-part">
+            <div id="paper-info-div">
+              <p id="paper-info">Showing 12 question papers</p>
+              <p id="otg">Results update as you filter</p>
+            </div>
+            <button id="clear-filter">Clear filters</button>
+          </div>
+          <div id="course-cards">
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-firstpart">
+          <div class="footer-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#ffffff"
+            >
+              <path
+                d="M480-60q-72-68-165-104t-195-36v-440q101 0 194 36.5T480-498q73-69 166-105.5T840-640v440q-103 0-195.5 36T480-60Zm0-104q63-47 134-75t146-37v-276q-73 13-143.5 52.5T480-394q-66-66-136.5-105.5T200-552v276q75 9 146 37t134 75ZM367-647q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47Zm169.5-56.5Q560-727 560-760t-23.5-56.5Q513-840 480-840t-56.5 23.5Q400-793 400-760t23.5 56.5Q447-680 480-680t56.5-23.5ZM480-760Zm0 366Z"
+              />
+            </svg>
+          </div>
+          <h4>QBank</h4>
+          <p>
+            Your organized academic resource for finding and accessing
+            university past examination questions.
+          </p>
+        </div>
+        <div class="footer-secondpart">
+          <h4>Quick Links</h4>
+          <div>
+            <a href="pq.html">Past Questions</a>
+            <a href="colleges.html">Colleges</a>
+            <a href="about.html">About</a>
+          </div>
+        </div>
+        <div class="footer-thirdpart">
+          <h4>Contact Us</h4>
+          <a class="footer-email" href="mailto:mirisadam17@gmail.com"
+            >mirisadam17@gmail.com</a
+          >
+          <p class="footer-paragraph">
+            Student Resource Centre University Campus
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 QBank. Built for students.</p>
+        <p>Academic resources, made accessible.</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
